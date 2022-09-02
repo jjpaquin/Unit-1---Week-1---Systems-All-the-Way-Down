@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectRotator : MonoBehaviour
+public class ObjectRotatorFast : MonoBehaviour
 {
-    float orbitSpeed = .3f;
+
+    float orbitSpeed = .5f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,6 @@ public class ObjectRotator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3 (0, orbitSpeed, 0));
+        transform.Rotate(new Vector3(0, orbitSpeed, 0));
     }
 }
